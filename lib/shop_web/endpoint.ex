@@ -10,6 +10,8 @@ defmodule ShopWeb.Endpoint do
     signing_salt: "I8pqM2W9"
   ]
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", ShopWeb.UserSocket,
     websocket: true,
     longpoll: false

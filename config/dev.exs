@@ -7,7 +7,8 @@ config :shop, Shop.Repo,
   database: "shop_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  pool_size: 10,
+  port: 5200
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
@@ -16,7 +17,7 @@ config :shop, Shop.Repo,
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :shop, ShopWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 4002],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
